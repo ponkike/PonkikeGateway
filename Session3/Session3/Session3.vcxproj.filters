@@ -38,5 +38,20 @@
     <ClInclude Include="HttpResponse.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BankDefinition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IMasterCardBank.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IBankConnector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestBankConnector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

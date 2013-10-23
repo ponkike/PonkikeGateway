@@ -98,9 +98,14 @@
     <ClCompile Include="Session3.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BankDefinition.h" />
+    <ClInclude Include="Configuration.h" />
     <ClInclude Include="Gateway.h" />
     <ClInclude Include="HttpRequest.h" />
     <ClInclude Include="HttpResponse.h" />
+    <ClInclude Include="IBankConnector.h" />
+    <ClInclude Include="IMasterCardBank.h" />
+    <ClInclude Include="TestBankConnector.h" />
     <ClInclude Include="Types.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
