@@ -1,0 +1,135 @@
+﻿Build started 23/10/2013 14:32:08.
+     1>Project "C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\msvc\2010\gmock_test.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I..\..\include /I..\.. /I../../gtest/include /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VARIADIC_MAX=10 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\msvc\2010\Debug\gmock_test\\" /Fd"C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\msvc\2010\Debug\gmock_test\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt /bigobj ..\..\test\gmock_all_test.cc
+         gmock_all_test.cc
+     1>C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\test/gmock-generated-function-mockers_test.cc(134): warning C4373: 'testing::gmock_generated_function_mockers_test::MockFoo::TakesConst': virtual function overrides 'testing::gmock_generated_function_mockers_test::FooInterface::TakesConst', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers
+                 C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\test/gmock-generated-function-mockers_test.cc(91) : see declaration of 'testing::gmock_generated_function_mockers_test::FooInterface::TakesConst'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xutility(2176): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xutility(2157) : see declaration of 'std::_Copy_impl'
+                 C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\include\gmock/gmock-more-actions.h(194) : see reference to function template instantiation '_OutIt std::copy<first_type,int*>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=int *,
+                     first_type=int *,
+                     _InIt=int *
+                 ]
+                 C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\include\gmock/gmock-generated-actions.h(673) : see reference to function template instantiation 'void testing::SetArrayArgumentActionP2<k,first_type,last_type>::gmock_Impl<F>::gmock_PerformImpl<A0,A1,A2,testing::internal::ExcessiveArg,testing::internal::ExcessiveArg,testing::internal::ExcessiveArg,testing::internal::ExcessiveArg,testing::internal::ExcessiveArg,testing::internal::ExcessiveArg,testing::internal::ExcessiveArg>(const std::tuple<<unnamed-symbol>,_V0_t,_V1_t> &,arg0_type,arg1_type,arg2_type,arg3_type,arg4_type,arg5_type,arg6_type,arg7_type,arg8_type,arg9_type) const' being compiled
+                 with
+                 [
+                     k=1,
+                     first_type=int *,
+                     last_type=int *,
+                     F=MyFunction ,
+                     A0=bool,
+                     A1=int *,
+                     A2=char *,
+                     <unnamed-symbol>=bool,
+                     _V0_t=int *,
+                     _V1_t=char *,
+                     arg0_type=bool,
+                     arg1_type=int *,
+                     arg2_type=char *,
+                     arg3_type=testing::internal::ExcessiveArg,
+                     arg4_type=testing::internal::ExcessiveArg,
+                     arg5_type=testing::internal::ExcessiveArg,
+                     arg6_type=testing::internal::ExcessiveArg,
+                     arg7_type=testing::internal::ExcessiveArg,
+                     arg8_type=testing::internal::ExcessiveArg,
+                     arg9_type=testing::internal::ExcessiveArg
+                 ]
+                 C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\include\gmock/gmock-generated-actions.h(673) : see reference to function template instantiation 'void testing::SetArrayArgumentActionP2<k,first_type,last_type>::gmock_Impl<F>::gmock_PerformImpl<A0,A1,A2,testing::internal::ExcessiveArg,testing::internal::ExcessiveArg,testing::internal::ExcessiveArg,testing::internal::ExcessiveArg,testing::internal::ExcessiveArg,testing::internal::ExcessiveArg,testing::internal::ExcessiveArg>(const std::tuple<<unnamed-symbol>,_V0_t,_V1_t> &,arg0_type,arg1_type,arg2_type,arg3_type,arg4_type,arg5_type,arg6_type,arg7_type,arg8_type,arg9_type) const' being compiled
+                 with
+                 [
+                     k=1,
+                     first_type=int *,
+                     last_type=int *,
+                     F=MyFunction ,
+                     A0=bool,
+                     A1=int *,
+                     A2=char *,
+                     <unnamed-symbol>=bool,
+                     _V0_t=int *,
+                     _V1_t=char *,
+                     arg0_type=bool,
+                     arg1_type=int *,
+                     arg2_type=char *,
+                     arg3_type=testing::internal::ExcessiveArg,
+                     arg4_type=testing::internal::ExcessiveArg,
+                     arg5_type=testing::internal::ExcessiveArg,
+                     arg6_type=testing::internal::ExcessiveArg,
+                     arg7_type=testing::internal::ExcessiveArg,
+                     arg8_type=testing::internal::ExcessiveArg,
+                     arg9_type=testing::internal::ExcessiveArg
+                 ]
+                 C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\include\gmock/gmock-more-actions.h(187) : see reference to function template instantiation 'Result testing::internal::ActionHelper<Result,Impl>::Perform<A1,A2,A3>(Impl *,const std::tuple<<unnamed-symbol>,_V0_t,_V1_t> &)' being compiled
+                 with
+                 [
+                     Result=void,
+                     Impl=testing::SetArrayArgumentActionP2<1,int *,int *>::gmock_Impl<MyFunction >,
+                     A1=bool,
+                     A2=int *,
+                     A3=char *,
+                     <unnamed-symbol>=bool,
+                     _V0_t=int *,
+                     _V1_t=char *
+                 ]
+                 C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\include\gmock/gmock-more-actions.h(187) : see reference to function template instantiation 'Result testing::internal::ActionHelper<Result,Impl>::Perform<A1,A2,A3>(Impl *,const std::tuple<<unnamed-symbol>,_V0_t,_V1_t> &)' being compiled
+                 with
+                 [
+                     Result=void,
+                     Impl=testing::SetArrayArgumentActionP2<1,int *,int *>::gmock_Impl<MyFunction >,
+                     A1=bool,
+                     A2=int *,
+                     A3=char *,
+                     <unnamed-symbol>=bool,
+                     _V0_t=int *,
+                     _V1_t=char *
+                 ]
+                 C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\include\gmock/gmock-more-actions.h(187) : while compiling class template member function 'void testing::SetArrayArgumentActionP2<k,first_type,last_type>::gmock_Impl<F>::Perform(const std::tuple<<unnamed-symbol>,_V0_t,_V1_t> &)'
+                 with
+                 [
+                     k=1,
+                     first_type=int *,
+                     last_type=int *,
+                     F=MyFunction ,
+                     <unnamed-symbol>=bool,
+                     _V0_t=int *,
+                     _V1_t=char *
+                 ]
+                 C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\include\gmock/gmock-more-actions.h(187) : see reference to class template instantiation 'testing::SetArrayArgumentActionP2<k,first_type,last_type>::gmock_Impl<F>' being compiled
+                 with
+                 [
+                     k=1,
+                     first_type=int *,
+                     last_type=int *,
+                     F=MyFunction 
+                 ]
+                 C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\test/gmock-more-actions_test.cc(621) : see reference to function template instantiation 'testing::SetArrayArgumentActionP2<k,first_type,last_type>::operator testing::Action<F>(void) const<MyFunction>' being compiled
+                 with
+                 [
+                     k=1,
+                     first_type=int *,
+                     last_type=int *,
+                     F=MyFunction
+                 ]
+                 C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\test/gmock-more-actions_test.cc(621) : see reference to function template instantiation 'testing::SetArrayArgumentActionP2<k,first_type,last_type>::operator testing::Action<F>(void) const<MyFunction>' being compiled
+                 with
+                 [
+                     k=1,
+                     first_type=int *,
+                     last_type=int *,
+                     F=MyFunction
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xutility(2157) : see declaration of 'std::_Copy_impl'
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xutility(2157) : see declaration of 'std::_Copy_impl'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\msvc\2010\Debug\gmock_test.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\msvc\2010\Debug\gmock_test.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\msvc\2010\Debug\gmock_test.lib" /MACHINE:X86 /SAFESEH "C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\msvc\2010\Debug\gmock_test\gmock_all_test.obj"
+         "C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\msvc\2010\Debug\gmock.lib"
+         "C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\msvc\2010\Debug\gmock_main.lib"
+         gmock_test.vcxproj -> C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\msvc\2010\Debug\gmock_test.exe
+     1>Done Building Project "C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\msvc\2010\gmock_test.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:53.60
