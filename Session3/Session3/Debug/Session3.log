@@ -1,12 +1,15 @@
-﻿Build started 23/10/2013 16:16:50.
+﻿Build started 23/10/2013 17:26:30.
      1>Project "C:\Users\enrique.luengo\Desktop\TDD Training\Session3\Session3\Session3.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\include" /I"C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\gtest\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VARIADIC_MAX=10 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Gateway.cpp Session3.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\include" /I"C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\gtest\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VARIADIC_MAX=10 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Session3.cpp
          Session3.cpp
-         Gateway.cpp
-         Generating Code...
+     1>c:\users\enrique.luengo\desktop\tdd training\session3\session3\session3.cpp(28): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>c:\users\enrique.luengo\desktop\tdd training\session3\session3\session3.cpp(42): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\msvc\2010\Debug\Session3.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\gtest\msvc\gtest\Debug" gtestd.lib gtest_maind.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\msvc\2010\Debug\Session3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\msvc\2010\Debug\Session3.lib" /MACHINE:X86 Debug\Gateway.obj
+         Debug\SecurityEngine.obj
          Debug\Session3.obj
          "C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\msvc\2010\Debug\gmock.lib"
          "C:\Users\enrique.luengo\Desktop\TDD Training\gmock-1.7.0\msvc\2010\Debug\gmock_main.lib"
@@ -15,4 +18,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.92
+Time Elapsed 00:00:01.91

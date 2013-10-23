@@ -1,5 +1,6 @@
 #include "Gateway.h"
 #include "IBankConnector.h"
+#include "ErrorCode.h"
 
 Gateway::Gateway(const IBankConnector* bankConnector) : bankConnector(bankConnector)
 {
@@ -21,7 +22,13 @@ HttpResponse Gateway::ProcessHttpRequest(const HttpRequest& httpRequest)
 	ApplicationId applicationId = configuration.GetApplication(httpRequest.applicationId);
 	if(applicationId == ApplicationId::INVALID)
 	{
-		return HttpResponse();
+		return HttpResponse(ErrorCode::INVALID_APPLICATION_ID);
+	}
+
+	ErrorCode errorCode = securityEngine.Check(httpRequest);
+	if (errorCode != ErrorCode::SUCCESS)
+	{
+		return HttpResponse(errorCode);
 	}
 
 	HttpResponse response;

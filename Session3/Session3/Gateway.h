@@ -4,6 +4,7 @@
 #include "HttpResponse.h"
 #include "BankDefinition.h"
 #include "Configuration.h"
+#include "SecurityEngine.h"
 #include <memory>
 
 class IBankConnector;
@@ -21,4 +22,5 @@ private:
 	Configuration configuration;
 	const IBankConnector* bankConnector;
 	std::shared_ptr<IMasterCardBank> masterCardBank;
+	SecurityEngine securityEngine;
 };
